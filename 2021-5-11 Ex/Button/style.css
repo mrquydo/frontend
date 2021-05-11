@@ -1,0 +1,56 @@
+/* reset css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    background-color: rgb(57, 57, 209);
+    border-radius: 5px;
+    color: cornsilk;
+    height: 5rem;
+    width: 10rem;
+    font-size: 200%;
+    margin: 10px;
+    border: none;
+}
+.btn-secondary{
+    background-color: rgb(94, 93, 93);
+    width: 11rem;
+}
+.btn-success{
+    background-color: rgb(6, 131, 6);
+}
+.btn-danger{
+    background-color: rgb(216, 31, 31);
+}
+.btn-warning{
+    background-color: rgb(238, 170, 43);
+    color: black;
+}
+.btn-info{
+    background-color: rgb(58, 116, 224);
+    color: black;
+}
+.btn-light{
+    background-color: rgb(233, 231, 224);
+    color: black;
+}
+.btn-dark{
+    background-color: rgb(8, 8, 8);
+    color: cornsilk;
+}
+.btn-link{
+    background-color: white;
+    color: cyan;
+
+}
