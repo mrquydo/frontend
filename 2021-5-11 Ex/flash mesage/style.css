@@ -1,0 +1,55 @@
+/* reset css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #aa9cc2;
+    padding: 50px 0;
+}
+.flash-message{
+    width: 25%;
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 12px #000000b8;;
+    text-align: center;
+    background-color: rgb(247,249,247);
+
+    display: inline-block;
+
+}
+
+.flash-message .flash-message__title{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.flash-message .flash-message__desc{
+    margin: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+}
+a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #83D7B5;
+}
+
+.flash-message--primary{
+    margin-right: auto;
+}
