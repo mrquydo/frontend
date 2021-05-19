@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color: black;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.warp{
+    background-color: grey;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.container{
+    background-color: white;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+.flash-message__desc{
+    font-size: 1.2rem;
+    font-weight: 10;
+    margin: 30px;
+}
+button{
+    font-size: 1.2rem;
+    background-color: rgb(234, 70, 71);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+}
