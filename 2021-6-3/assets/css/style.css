@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color:black;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+}
+.dflex{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+/* Nav */
+.nav-top{
+    justify-content: space-between;
+    margin: 0 20px;  
+    padding: 10px 0;
+    padding-right: 60px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.nav-item{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 3px 20px;
+    color: black;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color: #BD9E6B;
+}
+
+.nav-item-border{
+    border-left: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+}
+
+/* Menu */
+
+.nav-main{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.pd-20{
+    padding: 20px;
+}
+
+.menu-item{
+    font-size: 1.5rem;
+    padding: 20px;
+    font-weight: 500;
+}
+.nav-info-item{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: white;
+    padding: 0 5px;
+}
+.bd-round{
+    background-color: #BD9E6B;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+/* banner */
+.banner{
+    padding-bottom: 70px;
+}
+
+.banner.banner-bg{
+    position: absolute;
+}
+
+.banner-content{
+    text-align: center;
+    position: relative;
+    bottom: 750px;
+}
+
+.content-img{
+    width: 190px;
+    height: auto;
+}
+
+.banner-title{
+    color: white;
+    font-size: 8.3rem;
+    font-weight: 600;
+    margin: 50px;
+    margin-top: 20px;
+}
+.banner-btn{
+    border: none;
+}
+    
+.banner-btn-link{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    background-color: white;
+    padding: 20px 30px;
+    border: none;
+}
+.banner-btn-link:hover{
+    color: #BD9E6B;
+    background-color: #0E0602;
+}
+
+/* section 2 */
+
+.row-ave{
+    margin: 0 -5px;
+}
+
+.ave-50{
+    width: 50%;
+    padding: 5px;
+}
+
+.ave-25{
+    width: 25%;
+    padding: 5px;
+}
+
+.resize{
+    width: 270px;
+    height: 246px;
+}
