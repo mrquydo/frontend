@@ -1,0 +1,78 @@
+.boxed{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+
+}
+
+@keyframes move{
+    from{
+        margin-top: 20px;
+    }
+    to{
+        margin-top: 200px;
+    }
+}
+
+.circle-loading{
+    width: 5rem;
+    height: 5rem;
+    background-color: royalblue;
+    margin: 5rem auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-loading::before{
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    background-color: inherit;
+    border-radius: inherit;
+    position: absolute;
+    animation: fade 2s infinite forwards;
+}
+
+@keyframes fade{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.circles{
+    margin-top: 5rem;
+    text-align: center;
+    animation: loading 1s infinite;
+}
+
+.circle-item{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid violet;
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+
+@keyframes loading{
+    50%{
+        transform: rotate(200deg);
+    }
+    75%{
+        transform: rotate(160deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
