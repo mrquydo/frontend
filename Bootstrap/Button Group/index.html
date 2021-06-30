@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button group</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <span class="title text-center">
+        Basic example
+    </span>
+    <div class="btn-group">
+        <button class="btn btn-basic btn-first">
+            Left
+        </button>
+        <button class="btn btn-basic">
+            Middle
+        </button>
+        <button class="btn btn-basic btn-last">
+            Right
+        </button>
+    </div>
+    <span class="title text-center">
+        Mixed Style
+    </span>
+    <div class="btn-group">
+        <button class="btn btn-danger btn-first">
+            Left
+        </button>
+        <button class="btn btn-warning ">
+            Middle
+        </button>
+        <button class="btn btn-success btn-last">
+            Right
+        </button>
+    </div>
+    <span class="title text-center">
+        Outlined Style
+    </span>
+    <div class="btn-group">
+        <button class="btn btn-outlined btn-first">
+            Left
+        </button>
+        <button class="btn btn-outlined btn-middle">
+            Middle
+        </button>
+        <button class="btn btn-outlined btn-last">
+            Right
+        </button>
+    </div>
+    <span class="title text-center">
+        Nesting
+    </span>
+    <div class="dflex nesting">
+        <div class="btn-group">
+            <button class="btn btn-basic btn-first">
+                1
+            </button>
+            <button class="btn btn-basic">
+                2
+            </button>
+        </div>
+        <div class="dropdown-btn btn-group">
+            <button class="btn btn-dropdown btn-last">
+                <span>Dropdown</span>
+                <i class="fa fa-caret-down dropdown__caret"></i>
+            </button>
+            <ul class="dropdown-list">
+                <li class="dropdown-item">
+                    <a href="#">Tôi là Quý</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Tôi là Quý</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <span class="title text-center">
+        Nesting JS
+    </span>
+    <div class="dflex nesting">
+        <div class="btn-group">
+            <button class="btn btn-basic btn-first">
+                1
+            </button>
+            <button class="btn btn-basic">
+                2
+            </button>
+        </div>
+        <div class="dropdown-btn btn-group">
+            <button class="btn btn-dropdown btn-last" onlick="addDropdown()"> 
+                <span>Dropdown</span>
+                <i class="fa fa-caret-down dropdown__caret"></i>
+            </button>
+            <ul class="dropdown-list-2">
+                <li class="dropdown-item">
+                    <a href="#">Tôi là Quý</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Tôi là Quý</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+
+        var eleDropdown = document.querySelector('dropdown-list-2');
+
+        var statusDropdownMove = false;
+
+        function addDropdown() {
+
+            if (statusDropdownMove == false) {
+                eleDropdown.classList.add('dropdown-move');
+                statusDropdownMove = true;
+            }
+            else{
+                eleDropdown.classList.remove('dropdown-move');
+                statusDropdownMove = false;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
