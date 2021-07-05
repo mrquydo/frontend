@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="carousel">
+
+        <div class="carousel__item carousel__item--first active" id="first-slide">
+            First Slide
+        </div>
+
+        <div class="carousel__item carousel__item--second" id="second-slide">
+            Second Slide
+        </div>
+
+        <div class="carousel__item carousel__item--third"  id="third-slide">
+            Third Slide
+        </div>
+
+        <div class="indicators">
+            <button onclick="activeSlide('first-slide')"> 
+            </button>
+
+            <button onclick="activeSlide('second-slide')">
+            </button>
+
+            <button onclick="activeSlide('third-slide')">
+            </button>
+        </div>
+
+        <div class="indicator2">
+            <button class="indicator indicator-first color" onclick="activeIndicator('indicator-first'), activeSlide('first-slide')"> 
+            </button>
+
+            <button class="indicator indicator-second" onclick="activeIndicator('indicator-second'), activeSlide('second-slide')">
+            </button>
+
+            <button class="indicator indicator-third" onclick="activeIndicator('indicator-third'), activeSlide('third-slide')">
+            </button>
+        </div>
+
+    </div>
+    <script>
+
+        var slideItems = document.querySelectorAll('.carousel__item');
+
+        function activeSlide(slideId) {
+
+            // step 1 remove class active 
+            
+            slideItems.forEach(slide => {
+                 slide.classList.remove('active');
+            })
+
+            // step 2 add class active
+
+            // console.log('#' + slideId);
+            var curentSlide = document.querySelector('#' + slideId);
+            curentSlide.classList.add('active');
+        }
+
+        var indicatorColor = document.querySelectorAll('.indicator')
+
+        function activeIndicator(indicatorID) {
+
+            indicatorColor.forEach(color => {
+                color.classList.remove('color')
+            })
+
+            var currentIndicator = document.querySelector('.' + indicatorID);
+            currentIndicator.classList.add('color');
+        }
+
+
+
+    </script>
+</body>
+</html>

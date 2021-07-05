@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+button{
+    width: 30px;
+    height: 3px;
+    margin: 0 3px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel{
+    max-width: 750px;
+    position: relative;
+    margin: 50px auto;
+    height: 400px;
+}
+
+.carousel__item{
+    height: 400px;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: 0.6s ease-in;
+    float: left;
+}
+
+.carousel__item--first{
+    background-color: #777777;
+    color: #555555;
+}
+
+.carousel__item--second{
+    background-color: #666666;
+    color: #444444;
+}
+
+.carousel__item--third{
+    background-color: #555555;
+    color: #333333;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+}
+
+.active{
+    z-index: 1;
+    animation: slideshow 1s 1 alternate ease-in-out;
+
+}
+
+@keyframes slideshow{
+    from{
+        margin-left: -200px;
+    }
+    to{
+        margin-left: 0;
+    }
+}
+.color{
+    background-color: white;
+}
+
+.indicator2{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+}
