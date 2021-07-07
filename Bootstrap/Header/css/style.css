@@ -231,3 +231,36 @@ li i{
     text-align: center;
     margin-left: 15px;
 }
+
+/* dropdown JS */
+
+.dropdown{
+    position: relative;
+    
+}
+
+.dropdown-list{
+    position: absolute;
+    min-width: 15rem;
+    border: 1px solid #dee2e6;
+    background: white;
+    font-size: 1.4rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-move{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-item{
+    padding: 10px;
+}
+.dropdown-link{
+    color: black;
+}
+
+.dropdown-item:hover{
+    background: #ebedf0;
+}

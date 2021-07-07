@@ -108,12 +108,30 @@
                     <li>
                         <input class="search-short bg-white cl-black" type="search" placeholder="Search. . .">
                     </li>
+
+                    <!-- dropdown JS -->
                     <li class="dropdown">
-                        <a href="#" class="dropdown-select dflex">
+                        <a href="#" class="dropdown-select dflex dropdown-1" onclick="addDropdown('dropdown-1')">
                             <img src="https://github.com/mdo.png" width="32" height="32" class="rounded">
                             <i class="fas fa-caret-down"></i>
                         </a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">New project...</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">Settings</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">Profile</a>
+                            </li>
+                            <li class="dropdown-item" style="border-top: 1px solid #dee2e6;;">
+                                <a href="#" class="dropdown-link">Sign-out</a>
+                            </li>
+                        </ul>
                     </li>
+
+                    <!-- dropdown JS end -->
                 </ul>
             </div>
         </div>
@@ -124,10 +142,34 @@
         <div class="header-warper">
             <div class="row dflex">
                 <div class="col-33">
-                    <div class="logo dflex">
-                        <i class="fab fa-bootstrap"></i>
-                        <i class="fas fa-caret-down"></i>
-                    </div>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-select dflex dropdown-1" onclick="addDropdownLogo()">
+                            <i class="fab fa-bootstrap" style="color: black;"></i>
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-list dropdown-list-logo">
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">Overview</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">Inventory</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">Customers</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">Products</a>
+                            </li>
+                            <ul style="border-top: 1px solid #dee2e6;;">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Reports</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Analytics</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
                 </div>
 
                 <div class="col-66">
@@ -136,11 +178,26 @@
                             <input class="search-long bg-white cl-black" type="search" placeholder="Search. . .">
                         </form>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-select dflex">
+                            <a href="#" class="dropdown-select dflex dropdown-2" onclick="addDropdown('dropdown-2')">
                                 <img src="https://github.com/mdo.png" width="32" height="32" class="rounded">
                                 <i class="fas fa-caret-down"></i>
                             </a>
+                            <ul class="dropdown-list">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">New project...</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Settings</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Profile</a>
+                                </li>
+                                <li class="dropdown-item" style="border-top: 1px solid #dee2e6;;">
+                                    <a href="#" class="dropdown-link">Sign-out</a>
+                                </li>
+                            </ul>
                         </li>
+    
                     </ul>
                 </div>
             </div>
@@ -245,6 +302,45 @@
     </div>
 
     <div class="devider"></div>
+
+    <script>
+
+        // var curentButton = event.target;
+
+        //     curentButton.style.background = 'red';
+
+        var eleDropdown = document.querySelector('.dropdown-list');
+
+        var statusDropdownMove = false;
+
+        function addDropdown() {
+
+            if (statusDropdownMove == false) {
+                eleDropdown.classList.add('dropdown-move');
+                statusDropdownMove = true;
+            }
+            else{
+                eleDropdown.classList.remove('dropdown-move');
+                statusDropdownMove = false;
+            }
+        }
+
+        var eleDropdownLogo = document.querySelector('.dropdown-list-logo');
+
+        var statusDropdownMove = false;
+
+        function addDropdownLogo() {
+
+        if (statusDropdownMove == false) {
+             eleDropdownLogo.classList.add('dropdown-move');
+             statusDropdownMove = true;
+            }
+        else{
+            eleDropdownLogo.classList.remove('dropdown-move');
+            statusDropdownMove = false;
+            }
+        }
+    </script>
 
 </body>
 
