@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col{
+    padding:0 15px;
+    margin: 15px 0;
+}
+
+.col-lg-4{
+    width: 33.333333%;
+}
+
+.col-lg-8{
+    width: 66.666666%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.dflex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.cl-white{
+    color: white;
+}
+
+.cl-dark{
+    color: #2C3E50;
+}
+
+.bg-dark{
+    background: #2C3E50;
+}
+
+.bg-green{
+    background: #1abc9c;
+}
+
+.bg-white{
+    background: white;
+}
+/* nav */
+.ps-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.nav-logo{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.nav-list-item{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s linear;
+}
+
+.nav-list li{
+    padding: 1.7rem;
+    cursor: pointer;
+}
+
+.nav-list-item:hover{
+    color: #1abc9c;
+}
+
+/* Star bootstrp*/
+
+header{
+    padding: 8rem 0 6rem 0;
+}
+
+.avata{
+    margin-bottom: 5rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.fa-star{
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.devider{
+    margin: 1.25rem 0 1.5rem
+}
+.devider-line{
+    width: 7rem;
+    height: 0.25rem;
+}
+
+.sub-heading{
+    font-size: 1.5rem;
+}
+
+
+/* portfolio */
+
+.page-section{
+    padding: 6rem 0;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.portfolio-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.img-fluid{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.fa-plus{
+    font-size: 5rem;
+}
+.portfolio-item-layer{
+    margin:0 15px;
+    border-radius: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    transition: 0.2s;
+}
+
+.portfolio-item:hover .portfolio-item-layer{
+    opacity: 0.9;
+}
+
+/* About */
+
+.about-text{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn-download{
+    display: inline-block;
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-download:hover{
+    color: black;
+    background: white;
+}
+
+/* contact form */
+
+input{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    height: 5.5rem;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-item{
+    margin-bottom: 1rem;
+}
+
+.btn-send{
+    display: inline-block;
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* footer */
+footer{
+    padding: 4rem 0;
+}
+.footer-title{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer-text{
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+}
+
+.footer-link{
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+li i{
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+.social-item{
+    border: 2px solid white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0.25rem;
+    transition: 0.3s linear;
+}
+
+.social-item:hover{
+    color: black;
+    background: white;
+}
+
+/* copyright */
+
+.copyright{
+    background-color: #1a252f;
+    padding: 1.5rem 0;
+}
+
+/* responsive */
+
+@media (min-width: 200px) {
+    .container {
+      max-width: 540px;
+    }
+
+    .col-sm-12{
+        width: 100%;
+    }
+    .footer-item{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+
+    .col-md-6{
+        width: 50%;
+    }
+
+    .col-md-11{
+        width: 91.66666666%
+    }
+    .col-md-12{
+        width: 100%;
+    }
+
+    .footer-item{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+      max-width: 1320px;
+    }
+
+    .col-lg-4{
+        width: 33.333333%;
+    }
+
+    .col-lg-8{
+        width: 66.6666666%;
+    }
+
+}
