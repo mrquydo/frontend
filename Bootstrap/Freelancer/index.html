@@ -20,19 +20,21 @@
     <nav class="bg-dark ps-fixed">
         <div class="container nav cl-white dflex align-center justify-between bg-dark">
             <span class="nav-logo">START BOOTSTRAP</span>
-            <div>
-                <ul class="nav-list dflex">
-                    <li>
-                        <a href="" class="nav-list-item cl-white">PORTFOLIO</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-list-item cl-white">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-list-item cl-white">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
+            <a href="" class="nav-btn cl-white bg-green">
+                Menu
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="nav-list dflex">
+                <li>
+                    <a href="" class="nav-list-item cl-white">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="" class="nav-list-item cl-white">ABOUT</a>                    </li>
+                <li>
+                    <a href="" class="nav-list-item cl-white">CONTACT</a>
+                </li>
+            </ul>
+            
         </div>
     </nav>
 
@@ -66,42 +68,60 @@
                 <div class="devider-line bg-dark"></div>
             </div>
             <div class="row">
-                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item" onclick="showModal(
+                    'LOG CABIN', 
+                    'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png', 
+                   )">
                     <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
                         alt="" class="img-fluid">
                     <div class="portfolio-item-layer bg-green dflex align-center justify-center">
                         <i class="fas fa-plus cl-white"></i>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item" onclick="showModal(
+                    'TASTY CAKE', 
+                    'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png', 
+                   )">
                     <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png"
                         alt="" class="img-fluid">
                     <div class="portfolio-item-layer bg-green dflex align-center justify-center">
                         <i class="fas fa-plus cl-white"></i>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item" onclick="showModal(
+                    'CIRCUS TENT', 
+                    'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png', 
+                   )">
                     <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png"
                         alt="" class="img-fluid">
                     <div class="portfolio-item-layer bg-green dflex align-center justify-center">
                         <i class="fas fa-plus cl-white"></i>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item" onclick="showModal(
+                    'CONTROLLER', 
+                    'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png', 
+                   )">
                     <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png"
                         alt="" class="img-fluid">
                     <div class="portfolio-item-layer bg-green dflex align-center justify-center">
                         <i class="fas fa-plus cl-white"></i>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item" onclick="showModal(
+                    'LOCKED SAFE', 
+                    'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png', 
+                   )">
                     <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png"
                         alt="" class="img-fluid">
                     <div class="portfolio-item-layer bg-green dflex align-center justify-center">
                         <i class="fas fa-plus cl-white"></i>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <div class="col col-lg-4 col-md-6 col-sm-12 portfolio-item" onclick="showModal(
+                    'SUBMARINE', 
+                    'https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png', 
+                   )">
                     <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png"
                         alt="" class="img-fluid">
                     <div class="portfolio-item-layer bg-green dflex align-center justify-center">
@@ -240,7 +260,56 @@
         <small>Copyright © Your Website 2021</small>
     </div>
 
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <!-- <button class="modal-close" onclick="hideModal()">x</button> -->
+            <h2 class="modal-title cl-dark">
+                LOG CABIN
+            </h2>
+            <div class="devider dflex align-center justify-center">
+                <div class="devider-line bg-dark"></div>
+                <i class="fas fa-star cl-dark"></i>
+                <div class="devider-line bg-dark"></div>
+            </div>
+            <div class="modal-img">
+                <img class="img-fluid"
+                    src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+                    alt="">
+            </div>
+            <p class="modal-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil,
+                molestias
+                magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+                consequuntur itaque. Nam.
+            </p>
+            <div>
+                <button class="btn-modal-close cl-white bg-green" onclick="hideModal()">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
 
 </body>
 
+<script>
+    var modal = document.querySelector('.modal');
+    var modalTitle = document.querySelector('.modal-title');
+    var modalImg = document.querySelector('.modal-img img');
+    var modalDesc = document.querySelector('.modal-desc');
+
+    console.log(modalImg,'img')
+
+    function hideModal() {
+        modal.style.display = 'none'
+    }
+
+    function showModal(title, img,) {
+        modal.style.display = 'block'
+        modalTitle.innerHTML = title;
+        modalImg.src = img;
+    }
+</script>
 </html>
