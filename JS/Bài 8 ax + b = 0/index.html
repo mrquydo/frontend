@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc 1</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Giải phương trình ax + b = 0</h2>
+    <ul>
+        <li class="title">Hãy nhập a, b</li>
+        <li>
+            <label>Số a</label>
+            <input type="text" id="number-a">
+        </li>
+        <li>
+            <label>Số b</label>
+            <input type="text" id="number-b">
+        </li>
+        <li>
+            <button type="button" onclick="findX()">Tìm X</button>
+        </li>
+        <li class="title" id="result"></li>
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Chu Vi, diện tích</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tính chu vi, diện tích hình tròn</h2>
+    <ul>
+        <li class="title">Hãy nhập bán kính</li>
+        <li>
+            <label>Bán kính</label>
+            <input type="text" id="radius">
+        </li>
+
+        <li>
+            <button type="button" onclick="findPerimeterAndArea()">Tính</button>
+        </li>
+
+        <li class="title" id="area"></li>
+        <li class="title" id="perimeter"></li>
+        <div id="circle"></div>
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>

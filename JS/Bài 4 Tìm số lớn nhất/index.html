@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm số lớn nhất</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tìm số lớn nhất trong 4 số nguyên</h2>
+    <ul>
+        <li class="title">Hãy nhập 4 số</li>
+        <li>
+            <label>Số thứ nhất</label>
+            <input type="text" id="firstNumber">
+        </li>
+        <li>
+            <label>Số thứ hai</label>
+            <input type="text" id="secondNumber">
+        </li>
+        <li>
+            <label>Số thứ ba</label>
+            <input type="text" id="thirdNumber">
+        </li>
+        <li>
+            <label>Số thứ tư</label>
+            <input type="text" id="fourthNumber">
+        </li>
+        <li>
+            <button type="button" onclick="findMax()">Tìm số lớn nhất</button>
+        </li>
+
+        <li class="title" id="result"></li>
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>
