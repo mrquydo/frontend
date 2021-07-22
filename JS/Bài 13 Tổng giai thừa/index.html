@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh tong giai thừa</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        button{
+            margin-left: 33px;
+            margin-top: 10px;
+        }
+
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tính tổng giai thừa </h2>
+    <ul>
+        <li class="title">Hãy nhập số n</li>
+        <li>
+            <label>Số n</label>
+            <input type="text" id="number-n">
+        </li>
+        <li>
+            <button type="button" onclick="sumCalculation()">Tính tổng</button>
+        </li>
+        <li class="title" id="factorial-result"></li>
+        <li class="title" id="sum-result"></li>
+
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>
