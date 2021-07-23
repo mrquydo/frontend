@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm UCLN BCNN</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        button{
+            margin-left: 33px;
+            margin-top: 10px;
+        }
+
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tìm ước chung lớn nhất, bội chung nhỏ nhất của a và b</h2>
+    <ul>
+        <li class="title">Hãy nhập 2 số dương a, b</li>
+        <li>
+            <label>Số a</label>
+            <input type="text" id="number-a">
+        </li>
+        <li>
+            <label>Số b</label>
+            <input type="text" id="number-b">
+        </li>
+        <li>
+            <button type="button" onclick="findSubmultipleMultiple()">Tìm</button>
+        </li>
+        <li class="title" id="max-submultiple"></li>
+        <li class="title" id="min-multiple"></li>
+
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>
