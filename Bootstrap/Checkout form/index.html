@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center mt-3 mb-3">
+            <img class="d-block mx-auto mb-2" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72"
+                height="57">
+            <h2 class="mb-1">Checkout form</h2>
+            <p class="mb-2 header_desc">
+                Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.
+            </p>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col col-md-7 col-lg-8 col-sm-12 billing-order">
+                    <h4 class="mb-1">
+                        Billing address
+                    </h4>
+                    <form class="dflex">
+                        <div class="col-6">
+                            <label for="" class="form-lable">First name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="" class="form-lable">Last name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-12 mt-1">
+                            <label for="" class="form-lable">User name</label>
+                            <div class="dflex no-warp">
+                                <span class="input-text">@</span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-1">
+                            <label for="" class="form-lable">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" placeholder="you@example.com">
+                        </div>
+                        <div class="col-12 mt-1">
+                            <label for="" class="form-lable">Address</label>
+                            <input type="text" class="form-control" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12 mt-1">
+                            <label for="" class="form-lable">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" placeholder="Apartment or suit">
+                        </div>
+                        <div class="col-5 mt-1">
+                            <label for="" class="form-lable">Country</label>
+                            <input type="text" class="form-control" placeholder="Choose...">
+                        </div>
+                        <div class="col-4 mt-1">
+                            <label for="" class="form-lable">State</label>
+                            <input type="text" class="form-control" placeholder="Choose...">
+                        </div>
+                        <div class="col-3 mt-1">
+                            <label for="" class="form-lable">Zip</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <hr class="mt-2 mb-1">
+                        <div class="col-12 mt-1">
+                            <input type="checkbox" class="form-checkbox">
+                            <label for="" class="form-lable">Shipping address is the same as my billing address</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" class="form-checkbox">
+                            <label for="" class="form-lable">Save this information for next time</label>
+                        </div>
+                        <hr class="mt-1 mb-2">
+                        <h4 class="mb-1">
+                            Payment
+                        </h4>
+                        <div class="col-12">
+                            <input type="radio" class="form-checkbox">
+                            <label for="" class="form-lable">Credit card</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="radio" class="form-checkbox">
+                            <label for="" class="form-lable">Debit card</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="radio" class="form-checkbox">
+                            <label for="" class="form-lable">Paypal</label>
+                        </div>
+                        <div class="col-6 col-sm-12 mt-1">
+                            <label for="" class="form-lable">Name on card</label>
+                            <input type="text" class="form-control">
+                            <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-6 col-sm-12 mt-1">
+                            <label for="" class="form-lable">Credit card number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-3 col-sm-12 mt-1">
+                            <label for="" class="form-lable">Expiration</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-3 col-sm-12 mt-1">
+                            <label for="" class="form-lable">CVV</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <hr class="mt-1 mb-1">
+                        <button class="col-12 form-btn">
+                            Continue to Checkout
+                        </button>
+                    </form>
+                </div>
+                <div class="col col-md-5 col-lg-4 col-sm-12 cart-order">
+                    <div class="cart dflex justify-between">
+                        <h4 class="cart-title">Your cart</h4>
+                        <div class="item-number dflex align-center justify-center">
+                            3
+                        </div>
+                    </div>
+                    <ul class="mt-1 mb-1">
+                        <li class="dflex justify-between">
+                            <div>
+                                <h6>Product name</h6>
+                                <small class="text-muted">
+                                    Brief description
+                                </small>
+                            </div>
+                            <span class="text-muted">$12</span>
+                        </li>
+                        <li class="dflex justify-between bd-top">
+                            <div>
+                                <h6>Second product</h6>
+                                <small class="text-muted">
+                                    Brief description
+                                </small>
+                            </div>
+                            <span class="text-muted">$8</span>
+                        </li>
+                        <li class="dflex justify-between bd-top">
+                            <div>
+                                <h6>Third item</h6>
+                                <small class="text-muted">
+                                    Brief description
+                                </small>
+                            </div>
+                            <span class="text-muted">$5</span>
+                        </li>
+                        <li class="dflex justify-between bd-top" style="color: #198754;">
+                            <div>
+                                <h6>Promo code</h6>
+                                <small class="text-muted" style="color: #198754;">
+                                    EXAMPLECODE
+                                </small>
+                            </div>
+                            <span class="text-muted" style="color: #198754;">-$5</span>
+                        </li>
+                        <li class="dflex justify-between bd-top">
+                            <div>
+                                <h6>Total (USD)</h6>
+                            </div>
+                            <span class="text-muted" style="color: black;"><b>$20</b></span>
+                        </li>
+                    </ul>
+                    <form class="cart-form">
+                        <div class="input-group dflex no-warp">
+                            <input type="text" class    ="form-control" placeholder="Promo code">
+                            <button class="redeem-btn">
+                                Redeem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mt-3 mb-3 text-center">
+            <small class="text-muted">© 2017–2021 Company Name</small>
+            <ul class="dflex justify-center" style="border: none">
+                <li class="footer-list-item">
+                    <a href="">Privacy</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="">Terms</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="">Support</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
