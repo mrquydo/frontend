@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tuổi người dùng</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        button{
+            margin-left: 33px;
+            margin-top: 10px;
+        }
+
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tính tuổi người dùng</h2>
+    <ul>
+        <li class="title">Hãy nhập năm sinh</li>
+        <li>
+            <label>Năm</label>
+            <input type="text" id="year-born">
+        </li>
+        <li>
+            <button type="button" onclick="calUserAge()">Tính</button>
+        </li>
+        <li class="title" id="result"></li>
+
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>
