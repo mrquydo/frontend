@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .bagde{
+            width: 20px;
+            height: 10px;
+            display: inline-block;
+        }
+        .bagde-success {
+            background-color: green;
+        }
+
+        .bagde-danger {
+            background-color: red;
+        }
+        
+        .bagde-warning {
+            background-color: orange;
+        }
+        .bagde-primary {
+            background-color: blue;
+        }
+        
+        .bagde-secondary {
+            background-color: gray;
+        }
+
+        li{
+            cursor: pointer;
+        }
+
+
+        .delete-item{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input class="task" type="text" placeholder="them cong viec">
+
+    <button  onclick="addTodo()">Them</button>
+    <button  onclick="submitEdit()">Sua</button>
+
+    <ul class="list-task">
+
+    </ul>
+    <script src="./app.js"></script>
+</body>
+</html>
