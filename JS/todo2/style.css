@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 400;
+    color: rgba(175, 47, 47, 0.555);
+}
+
+.new-todo{
+    border: 1px solid #999;
+    position: relative;
+    width: 550px;
+}
+
+.todo-input{
+    font-size: 24px;
+    padding: 16px 16px 16px 60px;
+    border: 0;
+    width: 100%;
+}
+
+.fa-chevron-down{
+    font-size: 1.5rem;
+    color: gray;
+    position: absolute;
+    top: 30%;
+    left: 15px;
+}
+
+.todo-input:focus{
+    outline: 0;
+}
+
+ul{
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+li{
+    font-size: 24px;
+    padding: 16px 16px 16px 60px;
+    position: relative;
+    display: block;
+    border: 1px solid #999;
+    border-top: none;
+    text-align: right;
+}
+
+.toggle{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+li label{
+    position: absolute;
+    left: 60px;
+}
+
+li span{
+  color: red;
+}
+
+/* footer */
+.footer{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 550px;
+    border: 1px solid #999;
+    border-top: none;
+    margin: 0 auto  ;
+    color: #777;
+}
+
+a{
+    text-decoration: none;
+    color: #777;
+    padding: 3px;
+}
