@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẽ tam giác cân</title>
+    <style>
+        .title{
+            color: red;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        button{
+            margin-left: 33px;
+            margin-top: 10px;
+        }
+
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vẽ tam giác cân có chiều cao h</h2>
+    <ul>
+        <li class="title">Hãy nhập h</li>
+        <li>
+            <label>Số h</label>
+            <input type="number" id="number-h">
+        </li>
+        <!-- <li>
+            <label>Số n</label>
+            <input type="number" id="number-n">
+        </li> -->
+        <li>
+            <button type="button" onclick="Draw()">Vẽ</button>
+        </li>
+        <li class="title" id="result"></li>
+
+    </ul>
+
+    <script src="./app.js"></script>
+</body>
+</html>
