@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="warpper dflex">
+        <ul class="sidebar bg-blue col-2">
+            <li class=" pd-1-2 sidebar-brand dflex align-center">
+                <div class="brand-icon">
+                    <i class="far fa-laugh-wink cl-white"></i>
+                </div>
+                <div class="brand-text cl-white">
+                    ADMIN
+                </div>
+            </li>
+            <hr class="sidebar-devider">
+            <li class="sidebar-item dflex pd-1-2">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <hr class="sidebar-devider">
+            <li class="sidebar-item dflex pd-1-2">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+            </li>
+            <li class="sidebar-item dflex pd-1-2">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+            </li>
+            <hr class="sidebar-devider">
+            <li class="sidebar-item dflex pd-1-2">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+            </li>
+            <li class="sidebar-item dflex pd-1-2">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span>
+                </a>
+            </li>
+            <li class="sidebar-item dflex pd-1-2">
+                <a href="#" class="sidebar-link">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span>
+                </a>
+            </li>
+            <hr class="sidebar-devider">
+        </ul>
+        <div class="content">
+            <div class="navbar dflex justify-between">
+                <div class="input-group dflex">
+                    <input type="text" class="bg-light page-search" placeholder="Search for...">
+                    <div class="search-btn dflex align-center justify-center bg-blue">
+                            <i class="fas fa-search fa-sm"></i>
+                    </div>
+                </div>
+                <ul class="nav-list dflex">
+                    <li class="nav-item noti dflex">
+                        <i class="fas fa-bell"></i>
+                        <span class="ps-badge">
+                            3+
+                        </span>
+                    </li>
+                    <li class="nav-item noti">
+                        <i class="fas fa-envelope"></i>
+                        <span class="ps-badge" style="padding: 1px 2px;">
+                            7
+                        </span>
+                    </li>
+                    <li class="nav-item dflex border-left">
+                        <span>Admin name</span>
+                        <a href="#">
+                            <img class="img-profile" src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg" alt="">
+                        </a>
+                    </li>
+                </ul>               
+            </div>
+            <div class="container">
+                <h1>Tables</h1>
+                <p>DataTables is a third party plugin that is used to generate the demo table below</p>
+                <div class="card">
+                    <h6 class="card-header">
+                        DataTables Example
+                    </h6>
+                    <div class="card-body">
+                        <div id="table_filter" class="Tables_filter">
+                            <label>Search:
+                                <input type="search" class="form-control" placeholder="" aria-controls="dataTable">
+                            </label>
+                        </div>
+                        <table class="table" width="100%">
+                            <thead>
+                                <tr>
+                                    <th class="column-title">Name</th>
+                                    <th class="column-title">Position</th>
+                                    <th class="column-title">Office</th>
+                                    <th class="column-title">Age</th>
+                                    <th class="column-title">Start date</th>
+                                    <th class="column-title">Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th  class="table-content">Airi Satou</th>
+                                    <th  class="table-content">Accountant</th>
+                                    <th  class="table-content">Tokyo</th>
+                                    <th  class="table-content">33</th>
+                                    <th  class="table-content">2008/11/28</th>
+                                    <th  class="table-content">	$162,700</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                                <tr>
+                                    <th  class="table-content">Angelica Ramos</th>
+                                    <th  class="table-content">Chief Executive Officer (CEO)</th>
+                                    <th  class="table-content">London</th>
+                                    <th  class="table-content">47</th>
+                                    <th  class="table-content">2009/10/09</th>
+                                    <th  class="table-content">$1,200,000</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn-group">
+                            <button class="btn btn-first">
+                                Previous
+                            </button>
+                            <button class="btn">
+                                1
+                            </button>
+                            <button class="btn">
+                                2
+                            </button>
+                            <button class="btn">
+                                3
+                            </button>
+                            <button class="btn">
+                                4
+                            </button>
+                            <button class="btn btn-last">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
